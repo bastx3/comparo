@@ -37,6 +37,32 @@ export function SearchForm({
     if (url.trim()) {
       setIsSearching(true);
       const normalized = normalizeUrl(url);
+      
+      // Validación básica de URLs compatibles
+      const compatibleDomains = [
+        'amazon.es', 'amazon.com',
+        'carrefour.es',
+        'mediamarkt.es',
+        'pccomponentes.com'
+      ];
+      
+      try {
+        const urlObj = new URL(normalized);
+        const isCompatible = compatibleDomains.some(domain => 
+          urlObj.hostname.includes(domain)
+        );
+        
+        if (!isCompatible) {
+          alert('Esta tienda aún no es compatible. Prueba con Amazon, Carrefour, MediaMarkt o PcComponentes.');
+          setIsSearching(false);
+          return;
+        }
+      } catch (error) {
+        alert('URL no válida. Por favor, introduce una URL correcta.');
+        setIsSearching(false);
+        return;
+      }
+      
       router.push(`/producto/buscar?url=${encodeURIComponent(normalized)}`);
     }
   };

@@ -25,9 +25,6 @@ const Hero = () => {
           {/* Buscador */}
           <div className="mt-12">
             <SearchForm />
-            <p className="mt-3 text-sm text-muted-foreground">
-              Ejemplo: https://www.amazon.es/producto-ejemplo
-            </p>
           </div>
 
           <div className="mt-12 flex flex-col sm:flex-row items-center sm:justify-center gap-4">

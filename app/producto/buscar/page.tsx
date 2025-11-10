@@ -52,9 +52,10 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         <Navbar />
         <div className="min-h-screen pt-24 pb-12 flex items-center justify-center">
           <div className="text-center max-w-md mx-auto px-6">
-            <h1 className="text-2xl font-bold text-red-600 mb-4">Error al procesar el producto</h1>
+            <h1 className="text-2xl font-bold text-red-600 mb-4">Producto no compatible</h1>
             <p className="text-gray-600 mb-6">
-              No pudimos obtener información del producto. Verifica que la URL sea correcta y de una tienda compatible.
+              Esta URL no es compatible con nuestro sistema o la tienda aún no está disponible. 
+              Prueba con productos de Amazon, Carrefour o MediaMarkt.
             </p>
             <a 
               href="/" 
@@ -62,6 +63,15 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
             >
               Volver al inicio
             </a>
+            <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+              <h3 className="font-semibold text-blue-900 mb-2">Tiendas compatibles:</h3>
+              <ul className="text-sm text-blue-800 space-y-1">
+                <li>• Amazon España (amazon.es)</li>
+                <li>• Carrefour (carrefour.es)</li>
+                <li>• MediaMarkt (mediamarkt.es)</li>
+                <li>• PcComponentes (pccomponentes.com)</li>
+              </ul>
+            </div>
           </div>
         </div>
       </>

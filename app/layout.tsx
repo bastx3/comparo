@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: "Comparador de precios - Comparador de Precios con IA",
   description:
     "Compara precios en Amazon, Carrefour, MediaMarkt y más. Histórico de precios y análisis con IA para encontrar las mejores ofertas.",
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://comparadordeprecios.com' : 'http://localhost:3000'),
   keywords: [
     "Comparador de precios",
     "Comparador de precios",
