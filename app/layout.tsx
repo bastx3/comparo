@@ -9,11 +9,11 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Comparaelprecio - Comparador de Precios con IA",
+  title: "Comparador de precios - Comparador de Precios con IA",
   description:
     "Compara precios en Amazon, Carrefour, MediaMarkt y más. Histórico de precios y análisis con IA para encontrar las mejores ofertas.",
   keywords: [
-    "Comparaelprecio",
+    "Comparador de precios",
     "Comparador de precios",
     "Histórico de precios",
     "Amazon precios",
@@ -28,10 +28,10 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    siteName: "Comparaelprecio",
+    siteName: "Comparador de precios",
     locale: "en_US",
-    url: "https://comparaelprecio.com",
-    title: "Comparaelprecio - Comparador de Precios con IA",
+    url: "https://comparadordeprecios.com",
+    title: "Comparador de precios - Comparador de Precios con IA",
     description:
       "Compara precios en Amazon, Carrefour, MediaMarkt y más. Histórico de precios y análisis con IA para encontrar las mejores ofertas.",
     images: [
@@ -39,17 +39,16 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Comparaelprecio Preview",
+        alt: "Comparador de precios Preview",
       },
     ],
   },
   authors: [
     {
-      name: "Comparaelprecio",
-      url: "https://comparaelprecio.com",
+      name: "Comparador de precios",
+      url: "https://comparadordeprecios.com",
     },
   ],
-  creator: "Comparaelprecio",
   icons: [
     {
       rel: "icon",

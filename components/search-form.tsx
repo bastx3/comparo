@@ -103,9 +103,6 @@ export function SearchForm({
       </div>
 
       {/* Hint */}
-      <p className="mt-3 text-center text-xs text-muted-foreground">
-        Ejemplo: https://www.amazon.es/dp/B0D6W88TCN/
-      </p>
     </div>
   );
 }

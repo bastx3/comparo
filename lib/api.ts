@@ -1,4 +1,4 @@
-const BASE_URL = "https://amazon-worker.artxeweb.workers.dev";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://amazon-worker.artxeweb.workers.dev";
 
 export interface VerificadorResponse {
   amazon_url: string;

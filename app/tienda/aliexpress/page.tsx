@@ -15,11 +15,26 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 
+import { AlertCircle } from "lucide-react";
+
 export default function AliexpressPage() {
   return (
     <>
       <Navbar />
       <div className="min-h-screen pt-24 pb-12">
+        {/* Aviso de desarrollo */}
+        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mx-6 mb-8">
+          <div className="flex items-center gap-3">
+            <AlertCircle className="h-5 w-5 text-yellow-600" />
+            <div>
+              <h3 className="font-semibold text-yellow-800">Tienda en desarrollo</h3>
+              <p className="text-yellow-700 text-sm">
+                Esta tienda está en desarrollo. Mientras tanto, puedes usar nuestro comparador principal de Amazon.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Hero específico de AliExpress */}
         <div className="bg-gradient-to-br from-orange-50 to-red-50 py-20 px-6">
           <div className="max-w-4xl mx-auto text-center">
@@ -174,8 +189,8 @@ export default function AliexpressPage() {
               Compara precios en AliExpress y encuentra productos que no están disponibles en Europa.
             </p>
             <Button asChild size="lg" className="bg-orange-600 hover:bg-orange-700">
-              <Link href="/#buscar">
-                Empezar a Comparar <Search className="ml-2 h-5 w-5" />
+              <Link href="/tienda/amazon/">
+                Usar Amazon (Principal) <Search className="ml-2 h-5 w-5" />
               </Link>
             </Button>
           </div>

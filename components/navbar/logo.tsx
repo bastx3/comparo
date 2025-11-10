@@ -1,5 +1,7 @@
+import Link from "next/link";
+
 export const Logo = () => (
-  <div className="flex items-center gap-2">
+  <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
     <div className="h-8 w-8 bg-primary rounded-lg flex items-center justify-center">
       <svg
         width="20"
@@ -32,6 +34,6 @@ export const Logo = () => (
         />
       </svg>
     </div>
-    <span className="text-xl font-bold">Comparaelprecio</span>
-  </div>
+    <span className="text-xl font-bold">Comparador de precios</span>
+  </Link>
 );

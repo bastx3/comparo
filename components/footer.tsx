@@ -11,24 +11,24 @@ import Link from "next/link";
 
 const footerLinks = [
   {
-    title: "Funcionalidades",
-    href: "#funcionalidades",
-  },
-  {
-    title: "Precios",
-    href: "#precios",
+    title: "Funcionalidades", 
+    href: "/funcionalidades/",
   },
   {
     title: "Preguntas",
-    href: "#faq",
+    href: "/preguntas/",
   },
   {
     title: "Testimonios",
-    href: "#testimonios",
+    href: "/testimonios/",
   },
   {
-    title: "Privacidad",
-    href: "#privacidad",
+    title: "Tiendas",
+    href: "/tiendas/",
+  },
+  {
+    title: "Aviso Legal",
+    href: "/aviso-legal/",
   },
 ];
 
@@ -89,17 +89,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Subscribe Newsletter */}
-          <div className="max-w-xs w-full">
-            <h6 className="font-semibold">Mantente al día</h6>
-            <p className="text-sm text-muted-foreground mt-2">
-              Recibe las mejores ofertas y novedades
-            </p>
-            <form className="mt-6 flex items-center gap-2">
-              <Input type="email" placeholder="Tu email" />
-              <Button>Suscribirse</Button>
-            </form>
-          </div>
         </div>
         <Separator />
         

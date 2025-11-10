@@ -39,9 +39,6 @@ export default function CTABanner() {
               Comparar Precios Ahora <Search className="!h-5 !w-5" />
             </a>
           </Button>
-          <Button size="lg" variant="outline">
-            Ver Demo <ArrowUpRight className="!h-5 !w-5" />
-          </Button>
         </div>
       </div>
     </div>

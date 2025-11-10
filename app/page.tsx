@@ -14,9 +14,6 @@ export default function Home() {
       <main className="pt-16 xs:pt-20 sm:pt-24">
         <Hero />
         <Features />
-        <Pricing />
-        <FAQ />
-        <Testimonials />
         <CTABanner />
         <Footer />
       </main>
